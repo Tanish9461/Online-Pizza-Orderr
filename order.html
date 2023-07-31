@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head section  -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is the HTML document for the Order form">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="./CSS/orderstyle.css">
+</head>
+
+<body>
+    <!-- header section  -->
+    <header>
+        <h1>Order Your Pizza</h1>
+    </header>
+
+    <!-- main section  -->
+    <main>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email @" required>
+
+            <label for="phone">Phone:</label>
+            <input type="number" id="phone" name="phone" required>
+
+            <label for="pizza_type">Choose your pizza:</label>
+            <select id="pizza_type" name="pizza_type">
+                
+                <option value="pepperoni">Pepperoni Pizza</option>
+                <option value="cheese">Cheese Pizza</option>
+                <option value="veggie">Veggie Pizza</option>
+                <!-- Add more pizza options here -->
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+
+            <!-- checkbox section for veggies and toppings -->
+            <fieldset>
+                <legend>Choose extra veggies and toppings:</legend>
+                <input type="checkbox" id="extra_mushrooms" name="extra_veggies" value="mushrooms">
+                <label for="extra_mushrooms">Extra Mushrooms</label>
+
+                <input type="checkbox" id="extra_olives" name="extra_veggies" value="olives">
+                <label for="extra_olives">Extra Olives</label>
+
+                <input type="checkbox" id="extra_onions" name="extra_veggies" value="onions">
+                <label for="extra_onions">Extra Onions</label>
+
+                <input type="checkbox" id="extra_crispy_chicken" name="extra_veggies" value="crispy_chicken">
+                <label for="extra_crispy_chicken">Crispy Chicken</label>
+
+
+            </fieldset>
+
+            <!-- section for choose pizza crust -->
+            <fieldset>
+                <legend>Choose pizza crust:</legend>
+                <input type="radio" id="crust_thin" name="pizza_crust" value="thin" required>
+                <label for="crust_thin">Thin Crust</label>
+
+                <input type="radio" id="crust_thick" name="pizza_crust" value="thick" required>
+                <label for="crust_thick">Thick Crust</label>
+
+                <input type="radio" id="crust_regular" name="pizza_crust" value="regular" required>
+                <label for="crust_regular">Regular Crust</label>
+
+                <input type="radio" id="crust_stuffed" name="pizza_crust" value="stuffed" required>
+                <label for="crust_stuffed">Stuffed Crust</label>
+
+                <input type="radio" id="crust_gluten_free" name="pizza_crust" value="gluten_free" required>
+                <label for="crust_gluten_free">Gluten-free Crust</label>
+            </fieldset>
+
+            <!-- Payment type section -->
+            <fieldset>
+                <legend>Choose payment type:</legend>
+                <input type="radio" id="payment_cash" name="payment" value="cash" required>
+                <label for="payment_cash">Cash</label>
+
+                <input type="radio" id="payment_card" name="payment" value="card" required>
+                <label for="payment_card">Credit/Debit Card</label>
+
+                <input type="radio" id="payment_Tuck_Chuk_card" name="payment" value="store card" required>
+                <label for="payment_Tuck_Chuk_card">Tuck Chuk Card</label>
+
+                <input type="radio" id="payment_paytm" name="payment" value="Paytm" required>
+                <label for="payment_paytm">Paytm</label>
+            </fieldset>
+
+            <!-- section for delivery type  -->
+            <fieldset>
+                <legend>Choose order type:</legend>
+                <input type="radio" id="order_delivery" name="order_type" value="delivery" required>
+                <label for="order_delivery">Delivery</label>
+
+                <input type="radio" id="order_pickup" name="order_type" value="pickup" required>
+                <label for="order_pickup">Pickup</label>
+
+                <input type="radio" id="order_dine_in" name="order_type" value="dine in" required>
+                <label for="order_dine_in">Dine In</label>
+
+                <input type="radio" id="order_takeout" name="order_type" value="takeout" required>
+                <label for="order_takeout">Takeout</label>
+            </fieldset>
+            <!-- submit button and home page button  -->
+
+            <div class="btndiv">
+                <button type="submit" class="button">Submit Order</button>
+                <a href="index.html" class="homebtn">Home Page</a>
+            </div>
+        </form>
+
+
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <p>&copy; 2023 Pizza Heaven. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+<!-- end of the code -->

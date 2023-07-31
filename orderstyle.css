@@ -1,0 +1,125 @@
+/* style.css */
+
+/* Set default styles for the body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+/* Styles for the header section */
+header {
+  background-color: #ff6347;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Styles for the main content section */
+main {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the form element */
+form {
+  display: grid;
+  gap: 20px;
+  margin-top: 90px;
+}
+
+/* Styles for labels in the form */
+label {
+  font-weight: bold;
+}
+
+/* Styles for text inputs, number inputs, and select elements in the form */
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Styles for the custom select element */
+select {
+  appearance: none;
+  background-color: #f7f7f7;
+  background-image: linear-gradient(45deg, transparent 50%, #aaa 50%), linear-gradient(135deg, #aaa 50%, transparent 50%);
+  background-position: calc(100% - 20px) center, calc(100% - 15px) center;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+}
+
+/* Styles for checkboxes and radio buttons in the form */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Styles for a div containing buttons */
+.btndiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Styles for regular buttons */
+button {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #ff4633;
+}
+
+/* Styles for a specific button with class homebtn */
+.homebtn {
+  text-decoration: none;
+  border: 1px solid burlywood;
+  padding: 10px 20px;
+  background-color: burlywood;
+  border-radius: 10px 20px;
+  color: red;
+  font-size: larger;
+}
+
+/* Styles for the footer section */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #ff6347;
+  color: white;
+}
+
+/* Responsive styles for screens with max-width 768px */
+@media screen and (max-width: 768px) {
+  main {
+    margin: 10px;
+  }
+}
+
+/* Styles for fieldsets in the form */
+fieldset {
+  border: none;
+  margin-bottom: 20px;
+}
+
+/* Styles for the legend element in the fieldset */
+legend {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
